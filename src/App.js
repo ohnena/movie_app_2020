@@ -1,7 +1,10 @@
 import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
-// import "./App.css"; //에러나서 주석처리...
+import "./App.css"; 
+//성공...package-lock.json 삭제하고, node_modules삭제한 후, 
+//또한 package.json에서 쓸데없이 내가 임의로 따로 설치한 webpack관련 모듈사항을 삭제한 후에,
+//npm install 명령어 하나를 통해 (전부 다시설치) 해결...뭔가 내부적인 crash가 있었던듯...
 
 class App extends React.Component {
   state = {
